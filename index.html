@@ -34,11 +34,13 @@
     </head>
     <body>
         <header id="top">
-            <nav aria-label="Primary navigation">
-                <div class="nav-container">
-                    <a href="#top" title="Back to top"><img src="favicon-32x32.png" alt="Jose Barrera logo"/></a>
-                    <ul>
-                        <li><a href="#top">Back to top</a></li>
+            <nav class="navbar" aria-label="Primary navigation">
+                <div class="container nav-container">
+                    <div class="logo">
+                        <a href="#top" title="Back to top"><img src="favicon-32x32.png" alt="Jose Barrera logo"/></a>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#top">Back to Top</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
@@ -48,162 +50,222 @@
             </nav>
 
             <!-- Hero Section -->
-            <section id="hero">
-                <h1>Hello, I'm Jose Barrera</h1>
-                <h2>Software Developer</h2>
-                <p><strong>I build things with code.</strong></p>
+            <section id="hero" class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Hello, I'm <span>Jose Barrera</span></h1>
+                        <h2>Software Developer</h2>
+                        <p><strong>I build things with code.</strong></p>
+                    </div>
+                </div>
             </section>
         </header>
         <main>
             <!-- About Me Section -->
-             <section id="about">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <figure>
-                        <img src="https://placehold.co/400x400" alt="Professional headshot of Jose Barrera"/>
-                    </figure>
-                    <article>
-                        <h3>Software Developer based in Texas</h3>
-                        <p>I'm a recent Computer Science graduate from UT Tyler, based in Texas, and currently at the beginning of my journey as a software developer. I'm passionate about building practical, meaningful tools and always eager to learn and grow.</p>
-                        <p>Through personal projects and experimentation with technologies like self-hosting, databases, and front-end frameworks, I've been actively developing my skills. I'm committed to continuous improvement and enjoy sharing what I build along the way.</p>
-                        <ul>
-                            <li><strong>Name:</strong> Jose Barrera</li>
-                            <li><strong>Email:</strong> <a href="mailto:jfbarrera2002@gmail.com">jfbarrera2002@gmail.com</a></li>
-                            <li><strong>Location:</strong> Tyler, Texas</li>
-                        </ul>
-                        <a href="assets/Jose-Barrera-Resume-2025.pdf" download="Jose Barrera - Resume" title="Download my resume as a PDF">Download My Resume</a>
-                    </article>
+             <section id="about" class="about">
+                <div class="container">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-content">
+                        <div class="about-image">
+                            <figure>
+                                <img src="assets/me.jpeg" alt="Professional headshot of Jose Barrera"/>
+                            </figure>
+                        </div>
+                        <div class="about-text">
+                            <article>
+                                <h3>Software Developer based in Texas</h3>
+                                <p>I'm a recent Computer Science graduate from UT Tyler, based in Texas, and currently at the beginning of my journey as a software developer. I'm passionate about building practical, meaningful tools and always eager to learn and grow.</p>
+                                <p>Through personal projects and experimentation with technologies like self-hosting, databases, and front-end frameworks, I've been actively developing my skills. I'm committed to continuous improvement and enjoy sharing what I build along the way.</p>
+                                <div class="about-details">
+                                    <div class="detail">
+                                        <span class="label">Name:</span>
+                                        <span class="value">Jose Barrera</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span class="label">Email:</span>
+                                        <span class="value"><a href="mailto:jfbarrera2002@gmail.com">jfbarrera2002@gmail.com</a></span>
+                                    </div>
+                                    <div class="detail">
+                                        <span class="label">Location:</span>
+                                        <span class="value">Tyler, Texas</span>
+                                    </div>
+                                </div>
+                                <a href="assets/Jose-Barrera-Resume-2025.pdf" download="Jose Barrera - Resume" title="Download my resume as a PDF" class="btn primary-btn">Download My Resume</a>
+                            </article>
+                        </div>
+                    </div>
                 </div>
              </section>
 
              <!-- My Skills Section -->
-              <section id="skills">
-                  <h2>My Skills</h2>
-                  <div class="skill-cards">
-                    <article class="skill-card">
-                        <i class="fa-brands fa-python" aria-hidden="true"></i>
-                        <h3>Python</h3>
-                        <p>Writing Python scripts using loops, conditionals, and functions to manipulate data.</p>
-                    </article>
-                    <article class="skill-card">
-                        <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
-                        <h3>Git & GitHub</h3>
-                        <p>Using Git for version control with GitHub to manage repositories, branches, and commits.</p>
-                    </article>
-                    <article class="skill-card">
-                        <div class="skill-icon">
-                            <img src="assets/PSMI.png" alt="Scrum.org PSM I certification badge" loading="lazy"/>
-                        </div>
-                        <h3>Scrum (PSM I)</h3>
-                        <p>Certified in Professional Scrum Master I (PSM I) from Scrum.org. Familiar with Agile values, Scrum events, and team roles.</p>
-                        <a href="https://www.scrum.org/certificates/1222446" target="_blank" title="Verify PSM I Certification">Verify Credential</a>
-                    </article>
-                    <article class="skill-card">
-                        <i class="fa fa-database" aria-hidden="true"></i>
-                        <h3>SQL</h3>
-                        <p>Creating and querying relational databases using MySQL with ER diagrams for data modeling.</p>
-                    </article>
-                    <article class="skill-card">
-                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
-                        <h3>HTML</h3>
-                        <p>Writing semantic HTML to structure accessible, SEO-friendly web pages.</p>
-                    </article>
-                    <article class="skill-card">
-                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
-                        <h3>CSS</h3>
-                        <p>Building responsive layouts using Flexbox, Grid, and custom styling.</p>
-                    </article>
-                    <article class="skill-card">
-                        <i class="fa-brands fa-js" aria-hidden="true"></i>
-                        <h3>JavaScript</h3>
-                        <p>Learning modern JavaScript (ES6) including DOM manipulation, events, and asynchronous programming.</p>
-                    </article>
-                </div>
+              <section id="skills" class="skills">
+                  <div class="container">
+                      <h2 class="section-title">My Skills</h2>
+                      <div class="skills-container skill-cards">
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fa-brands fa-python" aria-hidden="true"></i>
+                            </div>
+                            <h3>Python</h3>
+                            <p>Writing Python scripts using loops, conditionals, and functions to manipulate data.</p>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+                            </div>
+                            <h3>Git & GitHub</h3>
+                            <p>Using Git for version control with GitHub to manage repositories, branches, and commits.</p>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <img src="assets/PSMI.png" alt="Scrum.org PSM I certification badge" loading="lazy"/>
+                            </div>
+                            <h3>Scrum (PSM I)</h3>
+                            <p>Certified in Professional Scrum Master I (PSM I) from Scrum.org. Familiar with Agile values, Scrum events, and team roles.</p>
+                            <a href="https://www.scrum.org/certificates/1222446" target="_blank" title="Verify PSM I Certification" class="btn primary-btn">Verify Credential</a>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fa fa-database" aria-hidden="true"></i>
+                            </div>
+                            <h3>SQL</h3>
+                            <p>Creating and querying relational databases using MySQL with ER diagrams for data modeling.</p>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                            </div>
+                            <h3>HTML</h3>
+                            <p>Writing semantic HTML to structure accessible, SEO-friendly web pages.</p>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                            </div>
+                            <h3>CSS</h3>
+                            <p>Building responsive layouts using Flexbox, Grid, and custom styling.</p>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fa-brands fa-js" aria-hidden="true"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <p>Learning modern JavaScript (ES6) including DOM manipulation, events, and asynchronous programming.</p>
+                        </article>
+                    </div>
+                  </div>
               </section>
 
               <!-- My Projects -->
-              <section id="projects">
-                <h2>My Projects</h2>
-                <article class="project-card">
-                    <img src="https://placehold.co/600x400" alt="Project preview." loading="lazy"/>
-                    <div class="project-info">
-                        <h3>Little Lemon</h3>
-                        <ul>
-                            <li>React</li>
-                            <li>Vite</li>
-                            <li>Vitest</li>
-                            <li>React Router</li>
-                        </ul>
-                        <p>Developed a responsive restaurant reservation web app using React and React Router. Integrated a dynamic booking system with form validation and component testing using Vitest. Built with Vite for fast development and optimized builds.</p>
+              <section id="projects" class="projects">
+                <div class="container">
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="assets/little-lemo.png" alt="Little Lemon project preview" loading="lazy"/>
+                            </div>
+                            <div class="project-info">
+                                <h3>Little Lemon</h3>
+                                <div class="project-tags">
+                                    <span>React</span>
+                                    <span>Vite</span>
+                                    <span>Vitest</span>
+                                    <span>React Router</span>
+                                </div>
+                                <p>Developed a responsive restaurant reservation web app using React and React Router. Integrated a dynamic booking system with form validation and component testing using Vitest. Built with Vite for fast development and optimized builds.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/JoseBarr777/coursera-capstone" target="_blank" title="View source code on GitHub" class="btn primary-btn">GitHub</a>
+                                    <a href="https://www.notion.so/Docs-Coming-Soon-2144318b918480d68d68ccd1c7ba5788?source=copy_link" target="_blank" title="Read project documentation on Notion" class="btn primary-btn secondary-btn">Documentation</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="assets/website-preview-card.png" alt="Personal Website project preview" loading="lazy"/>
+                            </div>
+                            <div class="project-info">
+                                <h3>Personal Website</h3>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Hosting</span>
+                                </div>
+                                <p>Designed and deployed a personal portfolio site using semantic HTML5 and custom CSS. Implemented responsive layouts, favicon, and Open Graph meta tags for SEO and social sharing. Hosted with GitHub Pages for seamless deployment.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/JoseBarr777/JoseBarr777.github.io" target="_blank" title="View source code on GitHub" class="btn primary-btn">GitHub</a>
+                                    <a href="https://www.notion.so/Buidling-jose-barrera-com-2144318b91848087a7c0f36d83f909a5?source=copy_link" target="_blank" title="Read project documentation on Notion" class="btn primary-btn secondary-btn">Documentation</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="assets/eer-diagram.png" alt="Travel Database project preview" loading="lazy"/>
+                            </div>
+                            <div class="project-info">
+                                <h3>Travel Database</h3>
+                                <div class="project-tags">
+                                    <span>SQL</span>
+                                    <span>MySQL</span>
+                                    <span>ER Diagrams</span>
+                                </div>
+                                <p>Built a relational database for a fictional travel agency using MySQL. Created ER diagrams to model relationships between clients, destinations, and bookings. Wrote SQL queries to manage and retrieve structured travel data.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/JoseBarr777/HermesX" target="_blank" title="View source code on GitHub" class="btn primary-btn">GitHub</a>
+                                    <a href="https://www.notion.so/Docs-Coming-Soon-2144318b918480d68d68ccd1c7ba5788?source=copy_link" target="_blank" title="Read project documentation on Notion" class="btn primary-btn secondary-btn">Documentation</a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/JoseBarr777/coursera-capstone" target="_blank"  title="View source code on GitHub">GitHub</a>
-                        <a href="https://www.notion.so/Jose-Barrera-s-Logs-Docs-20f4318b918480a6b0d5fb994a602124?source=copy_link" target="_blank" title="Read project documentation on Notion">Documentation</a>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <img src="https://placehold.co/600x400" alt="Project preview." loading="lazy"/>
-                    <div class="project-info">
-                        <h3>Personal Website</h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Hosting</li>
-                        </ul>
-                        <p>Designed and deployed a personal portfolio site using semantic HTML5 and custom CSS. Implemented responsive layouts, favicon, and Open Graph meta tags for SEO and social sharing. Hosted with GitHub Pages for seamless deployment.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/JoseBarr777/JoseBarr777.github.io" target="_blank"  title="View source code on GitHub">GitHub</a>
-                        <a href="https://www.notion.so/Jose-Barrera-s-Logs-Docs-20f4318b918480a6b0d5fb994a602124?source=copy_link" target="_blank" title="Read project documentation on Notion">Documentation</a>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <img src="https://placehold.co/600x400" alt="Project preview." loading="lazy"/>
-                    <div class="project-info">
-                        <h3>Travel Database</h3>
-                        <ul>
-                            <li>SQL</li>
-                            <li>MySQL</li>
-                            <li>ER Diagrams</li>
-                        </ul>
-                        <p>Built a relational database for a fictional travel agency using MySQL. Created ER diagrams to model relationships between clients, destinations, and bookings. Wrote SQL queries to manage and retrieve structured travel data.</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/JoseBarr777/HermesX" target="_blank"  title="View source code on GitHub">GitHub</a>
-                        <a href="https://www.notion.so/Jose-Barrera-s-Logs-Docs-20f4318b918480a6b0d5fb994a602124?source=copy_link" target="_blank" title="Read project documentation on Notion">Documentation</a>
-                    </div>
-                </article>
+                </div>
             </section>
 
             <!-- Contact Me Section -->
-            <section id="contact">
-                <div class="contact-cards">
-                    <article class="contact-card">
-                        <a href="mailto:jfbarrera2002@gmail.com" title="Send an email to Jose Barrera">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <h2>Email</h2>
-                        <p>jfbarrera2002@gmail.com</p>
-                        </a>
-                    </article>
-                    <article class="contact-card">
-                        <a href="https://www.linkedin.com/in/jf-barrera" target="_blank" title="Visit my LinkedIn profile">
-                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                        <h2>LinkedIn</h2>
-                        <p>linkedin.com/in/jf-barrera</p>
-                        </a>
-                    </article>
-                    <article class="contact-card">
-                        <a href="https://github.com/JoseBarr777" target="_blank" title="Check out my GitHub projects">
-                        <i class="fa-brands fa-github" aria-hidden="true"></i>
-                        <h2>GitHub</h2>
-                        <p>github.com/JoseBarr777</p>
-                        </a>
-                    </article>
-                  </div>
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="contact-content contact-cards">
+                        <article class="contact-card contact-item">
+                            <a href="mailto:jfbarrera2002@gmail.com" title="Send an email to Jose Barrera">
+                                <div class="icon">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div class="details">
+                                    <h3>Email</h3>
+                                    <p>jfbarrera2002@gmail.com</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="contact-card contact-item">
+                            <a href="https://www.linkedin.com/in/jf-barrera" target="_blank" title="Visit my LinkedIn profile">
+                                <div class="icon">
+                                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                </div>
+                                <div class="details">
+                                    <h3>LinkedIn</h3>
+                                    <p>linkedin.com/in/jf-barrera</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="contact-card contact-item">
+                            <a href="https://github.com/JoseBarr777" target="_blank" title="Check out my GitHub projects">
+                                <div class="icon">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                </div>
+                                <div class="details">
+                                    <h3>GitHub</h3>
+                                    <p>github.com/JoseBarr777</p>
+                                </div>
+                            </a>
+                        </article>
+                      </div>
+                </div>
             </section>
         </main>
-        <footer>
-            <p>&copy; <time datetime="2025">2025</time> Jose Barrera</p>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; <time datetime="2025">2025</time> Jose Barrera</p>
+            </div>
         </footer>
     </body>
 </html>
