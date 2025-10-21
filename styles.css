@@ -1,7 +1,7 @@
 /* Base Styles */
 :root {
-    --primary-color: #4a6cf7;
-    --secondary-color: #6c757d;
+    --primary-color: #0056b3;
+    --secondary-color: #555555;
     --dark-color: #212529;
     --light-color: #f8f9fa;
     --success-color: #28a745;
@@ -85,7 +85,7 @@
   }
 
   .primary-btn:hover {
-    background-color: #3a5bd9;
+    background-color: #0070dd;
     transform: translateY(-3px);
   }
 
