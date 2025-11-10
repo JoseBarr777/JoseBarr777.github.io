@@ -181,6 +181,14 @@
     margin-bottom: 20px;
   }
 
+  .hero .specializations {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-weight: 400;
+  }
+
   .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
